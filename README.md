@@ -1,12 +1,12 @@
 # Flutter Webview Example
 
-Webview Example build using flutter. Download [app-release.apk](https://github.com/sunnydanu/flutter-webview-demo/raw/master/app-release.apk)
+Webview Example build using flutter. Download [app-release.apk](https://github.com/sunnydanu/flutter-webview-demo/raw/main/app-release.apk)
 
 Screenshots :
 
-![alt text](https://raw.githubusercontent.com/sunnydanu/flutter-webview-demo/master/screenshots/ss1.jpeg "Webview 1")
+![alt text](https://raw.githubusercontent.com/sunnydanu/flutter-webview-demo/main/screenshots/ss1.jpeg "Webview 1")
 
-![alt text](https://raw.githubusercontent.com/sunnydanu/flutter-webview-demo/master/screenshots/ss2.jpeg "Webview 2")
+![alt text](https://raw.githubusercontent.com/sunnydanu/flutter-webview-demo/main/screenshots/ss2.jpeg "Webview 2")
 
 ## Getting Started
 
