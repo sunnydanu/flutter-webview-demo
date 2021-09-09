@@ -8,9 +8,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Webview Example',
+      title: 'Quick WebView demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: Home(),
     );
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
             onPressed: (){
               Navigator.of(context).pop();
             },
-            color: Colors.blue[300],
+            color: Colors.red[300],
           )
         ],
       ),
@@ -66,13 +66,13 @@ class _HomeState extends State<Home> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('Webview Example'),
+        title: Text('WebView Demo'),
       ),
       drawer: _createDrawer(),
       body: ListView(
         padding: EdgeInsets.all(20.0),
         children: <Widget>[
-          Center(child: Text("WEBVIEW", style: TextStyle(fontSize: 50.0),)),
+          Center(child: Text("WebView", style: TextStyle(fontSize: 50.0),)),
           TextField(
             autofocus: true,
             controller: myController,
@@ -105,7 +105,7 @@ class _HomeState extends State<Home> {
     });
     
     Navigator.of(context).push(MaterialPageRoute( 
-      builder: (context) => buildWebView(context, "Webview Example", false)
+      builder: (context) => buildWebView(context, "WebView Example", false)
     ));
   }
 
@@ -125,7 +125,6 @@ class _HomeState extends State<Home> {
       child: ListView(
         children: <Widget>[
           DrawerHeader(
-            child: Image.network("https://avatars2.githubusercontent.com/u/37338847?s=460&v=4", fit: BoxFit.cover,),
             padding: EdgeInsets.all(0.0),
             decoration: BoxDecoration(
               color: Colors.blue,
@@ -138,7 +137,7 @@ class _HomeState extends State<Home> {
             leading: Icon(Icons.open_in_new),
             onTap: () {
               setState(() {
-                url = 'https://github.com/pravodev';
+                url = 'https://github.com/sunnydanu';
               });
               Navigator.of(context).push(MaterialPageRoute( 
                 builder: (context) => buildWebView(context, "My Github", true)
